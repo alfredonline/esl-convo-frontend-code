@@ -14,14 +14,14 @@ function QuestionsView({ questions, topic }) {
   useEffect(() => {
     async function CollectDefinitions() {
       const fetchDefinitions = await axios.get(
-        `http://localhost:8080/definitions/${topic}`
+        `https://esl-convo-backend-code.herokuapp.com/definitions/${topic}`
       );
       setDefinitions(fetchDefinitions.data.definitions);
     }
 
     async function CollectSynonyms() {
       const fetchSynonyms = await axios.get(
-        `http://localhost:8080/synonyms/${topic}`
+        `https://esl-convo-backend-code.herokuapp.com/synonyms/${topic}`
       );
       setVocabulary(fetchSynonyms.data);
     }
