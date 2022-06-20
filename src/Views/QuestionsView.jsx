@@ -30,8 +30,6 @@ function QuestionsView({ questions, topic }) {
     CollectSynonyms();
   }, []);
 
-  const boxes = ["Questions", "Vocabulary", "Definitions"];
-
   return (
     <>
       <Grid
@@ -79,7 +77,10 @@ function QuestionsView({ questions, topic }) {
           sx={{ display: "flex", flexDirection: "column", gap: "10px" }}
         >
           <Header>
-            🙋 <span style={{ marginLeft: "10px" }}>Questions</span>
+            <span style={{ fontSize: "22px" }}>🙋</span>{" "}
+            <span style={{ marginLeft: "10px", fontSize: "22px" }}>
+              Questions
+            </span>
           </Header>
           {questions &&
             questions.map((item) => {
@@ -92,8 +93,11 @@ function QuestionsView({ questions, topic }) {
           xs="12"
           sx={{ display: "flex", flexDirection: "column", gap: "10px" }}
         >
-          <Header>
-            ✍️ <span style={{ marginLeft: "10px" }}>Vocabulary</span>
+          <Header sx={{ fontSize: "22px" }}>
+            <span style={{ fontSize: "22px" }}>✍️</span>{" "}
+            <span style={{ marginLeft: "10px", fontSize: "22px" }}>
+              Vocabulary
+            </span>
           </Header>
           {vocabulary &&
             vocabulary.map((item) => {
@@ -106,8 +110,11 @@ function QuestionsView({ questions, topic }) {
           xs="12"
           sx={{ display: "flex", flexDirection: "column", gap: "10px" }}
         >
-          <Header>
-            📚 <span style={{ marginLeft: "10px" }}>Definitions</span>
+          <Header sx={{ fontSize: "22px" }}>
+            <span style={{ fontSize: "22px" }}>📚</span>
+            <span style={{ marginLeft: "10px", fontSize: "22px" }}>
+              Definitions
+            </span>
           </Header>
           {definitions &&
             definitions.map((item) => {

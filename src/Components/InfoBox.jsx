@@ -6,7 +6,6 @@ function InfoBox({
   columnName,
   number,
   bgColor,
-  emoji,
   colorPassedDown,
   numColor,
 }) {

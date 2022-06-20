@@ -6,10 +6,10 @@ import landingImg from "../media/talking.svg";
 
 function LandingView() {
   return (
-    <Grid container sx={{ padding: "12px", marginTop: "50px" }} justifyContent="space-between">
+    <Grid container sx={{ padding: "60px", marginTop: "50px" }} justifyContent="center">
       <Grid
         item
-        sx={{ display: "flex", flexDirection: "column", gap: "20px" }}
+        sx={{ display: "flex", flexDirection: "column", gap: "20px", textAlign: "center"}}
         lg="6"
         xs="12"
       >
@@ -34,6 +34,7 @@ function LandingView() {
             padding: "12px",
             width: "150px",
             color: "#fff",
+            margin: "0 auto"
           }}
         >
           <Link to="/topics" style={{ color: "#fff", textDecoration: "none" }}>
@@ -41,15 +42,6 @@ function LandingView() {
           </Link>
         </Button>
       </Grid>
-      <Grid
-        item
-        lg="5"
-        xs="12"
-        style={{
-          backgroundImage: "url(" + landingImg + ")",
-          backgroundSize: "cover",
-        }}
-      ></Grid>
     </Grid>
   );
 }
