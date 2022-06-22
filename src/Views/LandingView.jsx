@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import { Button, Typography } from "@mui/material";
-import landingImg from "../media/talking.svg";
 
 function LandingView() {
   return (

@@ -29,3 +29,69 @@
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   width: 100%;
 }
+
+.lengthHolder {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(34, 34, 34, 0.579);
+}
+
+.selectionHolder {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 18px;
+  margin-top: 30px;
+}
+
+.selectionBtn {
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectionBtnActive {
+  background-color: #000000;
+  color: #fff;
+  padding: 18px;
+  border-radius: 40px;
+  font-weight: 600;
+
+}
+
+.discussionImageWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.discussionImageHolder {
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 250px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.centerImg {
+  width: 600px;
+  height: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+}
+
+.filter {
+  position: fixed;
+  background-color: #00000094;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
